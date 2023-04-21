@@ -10,21 +10,20 @@ public class Vehicle {
     private int odometerReading;
     private float price;
 
-    public Vehicle(){
-    }
+
 
     public Vehicle(long vehiclId , String makeModel, String color, int odometerReading, float price)  {
         this.vehiclId = vehiclId;
-        this.makeModel = getMakeModel();
-        this.color = getColor();
-        this.odometerReading= getOdometerReading();
-        this.price= getPrice();
+        this.makeModel = makeModel;
+        this.color = color;
+        this.odometerReading= odometerReading;
+        this.price= price;
 
 
     }
 
 
-    private long getVehiclId() {
+    public long getVehiclId() {
         return vehiclId;
     }
 
